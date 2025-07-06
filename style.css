@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.scoreboard {
+    width: 500px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.gameboard {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.square {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.048);
+}
+
+.o-symbol,
+.x-symbol {
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+}
+
+.x-symbol {
+    background-image: url(/svg/x.svg);
+
+}
+
+.o-symbol {
+    background-image: url(/svg/o.svg);
+}
