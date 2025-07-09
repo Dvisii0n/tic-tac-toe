@@ -93,7 +93,7 @@ const gameLogicController = (function () {
             won = true;
         }
 
-        if (filledColumnsCount === 3) {
+        if (filledColumnsCount === 3 && !won) {
             tie = true;
         }
         if (won || tie) {
